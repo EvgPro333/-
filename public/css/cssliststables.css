@@ -1,0 +1,344 @@
+.card {
+	margin: 5px;
+	/* background: #dfdede; */
+}
+.card-body {
+	margin: 1px;
+	background: #ffffff;
+}
+/* todo#############################  list-style */
+.listnone {
+	list-style: none;
+}
+.listdisc {
+	list-style: disc;
+}
+.listcircle {
+	list-style: circle;
+}
+.listsquare {
+	list-style: square outside url();
+}
+.listdecimal {
+	list-style: decimal;
+}
+.listdecimal-leading-zero {
+	list-style: decimal-leading-zero;
+}
+.listlower-roman {
+	list-style: lower-roman;
+}
+.listupper-roman {
+	list-style: upper-roman;
+}
+.listlower-alpha {
+	list-style: lower-alpha;
+}
+.listupper-alpha {
+	list-style: upper-alpha;
+}
+
+
+
+/* todo#############################  list-style-type */
+.listnone {
+	list-style-type: none;
+}
+.listdisc {
+	list-style-type: disc;
+}
+.listcircle {
+	list-style-type: circle;
+}
+.listsquare {
+	list-style-type: square;
+}
+.listdecimal {
+	list-style-type: decimal;
+}
+.listdecimal-leading-zero {
+	list-style-type: decimal-leading-zero;
+}
+.listlower-roman {
+	list-style-type: lower-roman;
+}
+.listupper-roman {
+	list-style-type: upper-roman;
+}
+.listlower-alpha {
+	list-style-type: lower-alpha;
+}
+.listupper-alpha {
+	list-style-type: upper-alpha;
+}
+
+
+
+/* todo#############################  display */
+
+.card_blockd {
+	list-style-type: disc;
+}
+.card_description_itemd {
+	display: list-item;
+}
+/* =========================== */
+
+
+/* todo#############################  list-style-position */
+.card_block {
+	list-style-type: disc;
+	padding: 0;
+}
+.card_description_item {
+	list-style-position: inside;
+	display: list-item;
+}
+
+
+/* =========================== */
+.card_blockk {
+	list-style-type: disc;
+	padding: 0;
+}
+.card_description_itemm {
+	list-style-position: outside;
+	display: list-item;
+}
+/* =========================== */
+
+
+
+/* todo#############################  list-style-image */
+.card_blocki {
+	/* list-style-type: disc; */
+	list-style-position: inside;
+	/* list-style-image: url('/img/test.png'); */
+	list-style-image: linear-gradient(to bottom right,red,blue) ;
+
+	padding: 0;
+}
+.card_description_itemi {
+	display: list-item;
+}
+/* =========================== */
+
+
+
+/* todo#############################  table-layout */
+.tablela tr {
+	border: 3px solid rgb(255, 242, 0);
+}
+.tablela td {
+	border: 3px solid rgb(0, 255, 13);
+}
+.tablela tr {
+	border: 3px solid rgb(255, 242, 0);
+}
+.tablela td {
+	border: 3px solid rgb(0, 255, 13);
+}
+.table {
+	table-layout: fixed;
+	/* width: 250px; */
+	width: 50px;
+}
+.tablet {
+	table-layout: auto;
+	/* width: 250px; */
+	width: 50px;
+}
+/* =========================== */
+
+
+
+/* todo#############################  border-collapse */
+/* .table tr {
+	border: 3px solid rgb(255, 242, 0);
+} */
+.tableta, .tabletb, td {
+	border: 10px solid rgb(0, 255, 13);
+	border-bottom-color: rgb(30, 0, 255);
+	border-right-color: rgb(255, 0, 0);
+}
+.tableb {
+	table-layout: fixed;
+	table-layout: auto;
+	width: 150px;
+	border-collapse: collapse;
+}
+.tableta {
+	/* table-layout: fixed; */
+	table-layout: auto;
+	width: 150px;
+	border-collapse: separate;
+}
+/* =========================== */
+
+
+/* todo#############################  border-spacing */
+.tablec {
+	border: 13px solid rgb(0, 255, 166);
+	border-bottom-color: rgb(255, 42, 0);
+	border-right-color: rgb(255, 255, 0);
+}
+/* .table {
+	table-layout: fixed;
+} */
+.tabletc {
+	table-layout: fixed;
+	table-layout: auto;
+	width:50px;
+	border-collapse: unset;
+	border-spacing: 20px 10px;
+}
+/* =========================== */
+
+
+/* todo#############################  caption-side */
+.tabletd tr td {
+	border: 1px solid rgb(0, 255, 13);
+}
+.tabletd {
+	width:50px;
+	/* caption-side: bottom; */
+	caption-side: top;
+}
+/* =========================== */
+
+
+/* todo#############################  empty-cells */
+.tabletd tr td {
+	border: 1px solid rgb(0, 255, 13);
+}
+.tabletd {
+	width:50px;
+	/* caption-side: bottom; */
+	/* caption-side: top; */
+	empty-cells: show;
+	empty-cells: hide;
+}
+/* =========================== */
+
+
+/* todo#############################  opacity */
+table .tabletf  {
+	/* border: 1px solid rgb(0, 255, 13); */
+}
+.tabletf {
+	border: 1px solid rgb(0, 255, 13);
+	width:150px;
+	opacity: 1;
+}
+p .tabletfa {
+opacity: 20%;
+}
+/* =========================== */
+
+
+/* todo#############################  сontent */
+p.closequote::before {
+	content: open-quote;
+}
+p.closequote::after {
+	content: close-quote;
+}
+div.closequote::before {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px;
+	background-image: url('/img/test.png');
+}
+div.closequote::after {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 2px;
+	background-image: url('/img/test.png');
+}
+/* =========================== */
+
+
+/* todo#############################  сalc() */
+.calc {
+	width: 600px;
+	margin: 0;
+	/* margin-right: calc(100% - 600px); */
+	margin-left: calc(100% - (600px / 2));
+}
+/* =========================== */
+
+
+/* todo#############################  var() */
+
+/* всі перемінні в root повинны бути на початку css*/
+:root {
+	--text-color: #c3ff00;
+	--width: 50px;
+	--font-size: 20px;
+	--bg:rgba(4, 63, 136, 0.454);
+}
+.one {
+	color: var(--text-color);
+	font-size: 16px;
+	width: var(--width);
+	background: var(--bg);
+}
+.two {
+	color: var(--text-color);
+	font-size: var(--font-size);
+	width: 250px;
+	background: var(--bg,red);
+}
+.three {
+	color: red;
+	font-size: var(--font-size);
+	width: var(--width);
+	background: var(--bg,blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

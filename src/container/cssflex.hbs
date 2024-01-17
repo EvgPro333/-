@@ -1,0 +1,821 @@
+	<h2 class="title">  </h2>
+
+	{{!-- ================================ Позиціювання--}}
+	<section>
+		<div class="card">
+			<div class="card-body">
+Що таке
+позиціювання?
+
+Позиціювання — це процес верстки, якій відповідає
+за розподілення елементів на сторінці інтерфейсу
+
+Основа задача при верстці це не лише відстилізувати
+контент, а ще якісно та масштабовано розмістити його
+			</div>
+		</div> 
+
+		{{!-- ===================================== flexbox--}}
+		<div class="card">
+			<div class="card-body">
+Що таке гнучке
+позиціювання?
+
+Гнучке позиціювання (flexbox) — це сучасна технологія
+позиціювання в CSS, яка є альтернативою сіткової системи
+
+.example {
+: flex;
+}
+display
+
+display
+
+Значення Опис
+
+flex Елемент відображається як гнучкий блоковий контейнер
+
+inline-flex Елемент відображається як гнучкий рядковий контейнер
+					<div class="card">
+						<div class="card-body">
+							<div class="card">
+								<div class="card-body">
+									<div class="flex-container1">
+										<div class="flex-itema">
+											Atext-1
+										</div>
+										<div class="flex-itema">
+											Atext-2
+										</div>
+										<div class="flex-itema">
+											Atext-3
+										</div>
+										<div class="flex-itema">
+											Atext-4
+										</div>
+										<div class="flex-itema">
+											Atext-5
+										</div>
+									</div>
+								</div>
+							</div>
+							{{!-- ==================== --}}
+							<div class="card">
+								<div class="card-body">
+									<div class="flex-container1a">
+										<div class="flex-itemb">
+											Btext-1
+										</div>
+										<div class="flex-itemb">
+											Btext-2
+										</div>
+										<div class="flex-itemb">
+											Btext-3
+										</div>
+										<div class="flex-itemb">
+											Btext-4
+										</div>
+										<div class="flex-itemb">
+											Btext-5
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+
+		{{!-- ===================================== flex-direction--}}
+		<div class="card">
+			<div class="card-body">
+
+
+flex-direction — це CSS властивість, яка визначає напрямок,
+в якому розміщуються елементи flex-контейнера.
+
+.example {
+: row;
+}
+flex-direction
+
+flex-direction
+Напрямок
+
+Значення Опис
+
+row Горизонтально зліва направо.
+Напрямок
+
+Значення Опис
+
+row-reverse Горизонтально справа наліво
+Напрямок
+
+Значення Опис
+
+column Вертикально зверху вниз.
+Напрямок
+
+Значення Опис
+
+column-reverse Вертикально знизу вгору.
+
+
+<div class="card">
+	<div class="card-body">
+
+		{{!-- ==================== row--}}
+			<div class="card">
+				<div class="card-body">
+					<div class="flex-container2">
+						<div class="flex-itemc">
+							Atext-1
+						</div>
+						<div class="flex-itemc">
+							Atext-2
+						</div>
+						<div class="flex-itemc">
+							Atext-3
+						</div>
+						<div class="flex-itemc">
+							Atext-4
+						</div>
+						<div class="flex-itemc">
+							Atext-5
+						</div>
+					</div>
+				</div>
+			</div>
+
+		{{!-- ==================== row-reverse--}}
+			<div class="card">
+				<div class="card-body">
+					<div class="flex-container2a">
+						<div class="flex-itemd">
+							Btext-1
+						</div>
+						<div class="flex-itemd">
+							Btext-2
+						</div>
+						<div class="flex-itemd">
+							Btext-3
+						</div>
+						<div class="flex-itemd">
+							Btext-4
+						</div>
+						<div class="flex-itemd">
+							Btext-5
+						</div>
+					</div>
+				</div>
+			</div>
+
+		{{!-- ==================== column--}}
+			<div class="card">
+				<div class="card-body">
+					<div class="flex-container2b">
+						<div class="flex-itemda">
+							Ctext-1
+						</div>
+						<div class="flex-itemda">
+							Ctext-2
+						</div>
+						<div class="flex-itemda">
+							Ctext-3
+						</div>
+						<div class="flex-itemda">
+							Ctext-4
+						</div>
+						<div class="flex-itemda">
+							Ctext-5
+						</div>
+					</div>
+				</div>
+			</div>
+
+		{{!-- ==================== column-reverse--}}
+			<div class="card">
+				<div class="card-body">
+					<div class="flex-container2c">
+						<div class="flex-itemdb">
+							Dtext-1
+						</div>
+						<div class="flex-itemdb">
+							Dtext-2
+						</div>
+						<div class="flex-itemdb">
+							Dtext-3
+						</div>
+						<div class="flex-itemdb">
+							Dtext-4
+						</div>
+						<div class="flex-itemdb">
+							Dtext-5
+						</div>
+					</div>
+				</div>
+			</div>
+		{{!-- ==================== --}}
+
+	</div>
+</div>
+</div>
+		</div>
+
+		{{!-- ===================================== flex-wrap--}}
+		<div class="card">
+			<div class="card-body">
+Перенесення рядка
+
+flex-wrap — це CSS властивість, яка використовується для
+вказівки, чи можуть елементи переноситись на новий рядок
+
+.example {
+: wrap;
+}
+flex-wrap
+
+flex-wrap
+Перенесення рядка
+
+Значення Опис
+
+nowrap Елементи не можуть переноситься на наступний
+рядок або колонку і все розміщується в один рядок
+
+wrap Елементи можуть переноситись на наступний рядок
+
+або колонку, якщо це необхідно
+
+wrap-reverse Елементи можуть переноситись на наступний рядок
+
+або колонку у зворотному порядку
+
+		{{!-- ==================== wrap--}}
+			<div class="card">
+				<div class="card-body">
+					<div class="flex-container3a">
+						<div class="flex-itema3">
+							text-1
+						</div>
+						<div class="flex-itema3">
+							text-2
+						</div>
+						<div class="flex-itema3">
+							text-3
+						</div>
+						<div class="flex-itema3">
+							tedddddddddddddddddddddddddddddddddddddddddddddddxt-4
+						</div>
+						<div class="flex-itema3">
+							text-5
+						</div>
+					</div>
+				</div>
+			</div>
+
+		{{!-- ==================== nowrap--}}
+			<div class="card">
+				<div class="card-body">
+					<div class="flex-container3b">
+						<div class="flex-itemb3">
+							text-1
+						</div>
+						<div class="flex-itemb3">
+							text-2
+						</div>
+						<div class="flex-itemb3">
+							text-3
+						</div>
+						<div class="flex-itemb3">
+							tedddddddddddddddddddddddddddddddddddddddddddddddddddddddddddxt-4
+						</div>
+						<div class="flex-itemb3">
+							text-5
+						</div>
+					</div>
+				</div>
+			</div>
+
+		{{!-- ==================== wrap-reverse--}}
+			<div class="card">
+				<div class="card-body">
+					<div class="flex-container3c">
+						<div class="flex-itemc3">
+							text-1
+						</div>
+						<div class="flex-itemc3">
+							text-2
+						</div>
+						<div class="flex-itemc3">
+							text-3
+						</div>
+						<div class="flex-itemc3">
+							teddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddxt-4
+						</div>
+						<div class="flex-itemc3">
+							text-5
+						</div>
+					</div>
+				</div>
+			</div>
+
+		{{!-- ==================== --}}
+			</div>
+			</div>
+
+		{{!-- ===================================== flex-flow--}}
+		<div class="card">
+			<div class="card-body">
+Потік
+
+flex-flow — це CSS властивість, яка є скороченням
+для властивостей flex-direction та flex-wrap
+
+.example {
+flex-flow: column nowrap;
+}
+
+flex-flow
+
+{{!-- ==================== wrap--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container4a">
+				<div class="flex-itema4">
+					text-1 заміна wrap та direction
+				</div>
+				<div class="flex-itema4">
+					text-2
+				</div>
+				<div class="flex-itema4">
+					text-3
+				</div>
+				<div class="flex-itema4">
+					text-4
+				</div>
+				<div class="flex-itema4">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+			</div>
+			</div>
+
+		{{!-- ===================================== justify-content--}}
+		<div class="card">
+			<div class="card-body">
+Розміщення
+по основній лінії
+
+justify-content — це CSS властивість, яка відповідає
+за розміщення елементів по основній лінії
+
+.example {
+: center;
+}
+justify-content
+
+justify-
+
+Розміщення
+по основній лінії
+
+Значення Опис
+
+flex-start Елементи вирівнюються на початку лінії
+
+Розміщення
+по основній лінії
+
+Значення Опис
+
+flex-end Елементи вирівнюються в кінці лінії
+
+Розміщення
+по основній лінії
+
+Значення Опис
+
+center Елементи вирівнюються по центру лінії
+
+Розміщення
+по основній лінії
+
+Значення Опис
+
+space-between Елементи рівномірно розподіляються по лінії
+
+Розміщення
+по основній лінії
+
+Значення Опис
+
+space-around
+
+Елементи рівномірно розподіляються
+по лінії з однаковими відстанями між ними
+та з меншим відступом від країв контейнера
+
+55 px 55 px 55 px 55 px 55 px 55 px
+
+Розміщення
+по основній лінії
+
+Значення Опис
+
+space-evenly Елементи рівномірно розподіляються по лінії з
+
+однаковими відстанями між елементами та країв блоку
+
+80 px 80 px 80 px 80 px
+
+Розміщення
+по основній лінії
+
+Значення Опис
+
+stretch Елементи розтягуються, щоб заповнити всю лінію
+{{!-- ==================== flex-start--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container5a">
+				<div class="flex-itema5">
+					text-1
+				</div>
+				<div class="flex-itema5">
+					text-2
+				</div>
+				<div class="flex-itema5">
+					text-3
+				</div>
+				<div class="flex-itema5">
+					text-4
+				</div>
+				<div class="flex-itema5">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+
+{{!-- ==================== flex-end--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container5b">
+				<div class="flex-itemb5">
+					text-1
+				</div>
+				<div class="flex-itemb5">
+					text-2
+				</div>
+				<div class="flex-itemb5">
+					text-3
+				</div>
+				<div class="flex-itemb5">
+					text-4
+				</div>
+				<div class="flex-itemb5">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+
+{{!-- ==================== center--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container5c">
+				<div class="flex-itemc5">
+					text-1
+				</div>
+				<div class="flex-itemc5">
+					text-2
+				</div>
+				<div class="flex-itemc5">
+					text-3
+				</div>
+				<div class="flex-itemc5">
+					text-4
+				</div>
+				<div class="flex-itemc5">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+
+{{!-- ==================== space-between--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container5d">
+				<div class="flex-itemd5">
+					text-1
+				</div>
+				<div class="flex-itemd5">
+					text-2
+				</div>
+				<div class="flex-itemd5">
+					text-3
+				</div>
+				<div class="flex-itemd5">
+					text-4
+				</div>
+				<div class="flex-itemd5">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+
+{{!-- ==================== space-around--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container5e">
+				<div class="flex-iteme5">
+					text-1
+				</div>
+				<div class="flex-iteme5">
+					text-2
+				</div>
+				<div class="flex-iteme5">
+					text-3
+				</div>
+				<div class="flex-iteme5">
+					text-4
+				</div>
+				<div class="flex-iteme5">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+
+{{!-- ==================== stretch--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container5f">
+				<div class="flex-itemf5">
+					text-1
+				</div>
+				<div class="flex-itemf5">
+					text-2
+				</div>
+				<div class="flex-itemf5">
+					text-3
+				</div>
+				<div class="flex-itemf5">
+					text-4
+				</div>
+				<div class="flex-itemf5">
+					text-5 'poisdjo ijbg ohsb ohjo' ghojhgt 'obhouhrotgod ho o'oj'ojhj'orjh эоищэуо 'hi'ob e'oi
+				</div>
+			</div>
+		</div>
+	</div>
+
+{{!-- ==================== --}}
+			</div>
+			</div>
+
+		{{!-- ===================================== align-content--}}
+		<div class="card">
+			<div class="card-body">
+Розміщення
+по другій лінії
+
+align-content — це CSS властивість, яка відповідає
+за розміщення елементів по другій лінії
+
+.example {
+: center;
+}
+align-content
+
+align-content
+
+align-content працює лише коли flex-wrap: wrap
+{{!-- ==================== stretch--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container6a">
+				<div class="flex-item6a">
+					text-1
+				</div>
+				<div class="flex-itema6">
+					text-2
+				</div>
+				<div class="flex-itema6">
+					text-3
+				</div>
+				<div class="flex-itema6">
+					text-4
+				</div>
+				<div class="flex-itema6">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+{{!-- ==================== stretch--}}
+	<div class="card">
+		<div class="card-body">
+			<div class="flex-container6b">
+				<div class="flex-itemb6">
+					text-1
+				</div>
+				<div class="flex-itemb6">
+					text-2
+				</div>
+				<div class="flex-itemb6">
+					text-3
+				</div>
+				<div class="flex-itemb6">
+					text-4
+				</div>
+				<div class="flex-itemb6">
+					text-5
+				</div>
+			</div>
+		</div>
+	</div>
+
+{{!-- ================
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+
+		{{!-- ===================================== fox--}}
+		<div class="card">
+			<div class="card-body">
+
+			</div>
+			</div>
+		{{!-- ===================================== --}}
+		
+	</section>
+
+	<section>
+		<div class="card">
+		<div class="card-body">
+
+		</div>
+	</div> 
+	{{!-- ===================================== --}}
+
+	<div class="card">
+	<div class="card-body">
+
+	</div>
+	</div>
+	{{!-- ===================================== --}}
+	
+	</section>

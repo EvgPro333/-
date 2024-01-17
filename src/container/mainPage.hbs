@@ -1,0 +1,80 @@
+<div class="page">
+	<div class="page_content">
+
+{{!-- ! ######################################################## HEADER --}}
+		<div class="page_block">
+			<header class="header row g-0">
+				<div class="col-3">
+					<div class="logo">
+						<span class="badge text-bg-primary"> FullStack </span>
+					</div> 
+				</div>
+				<nav class="header_nav col-9">
+					<div class="header_nav_right">
+						<div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
+								<a href="#" class="nav_link"> html </a>
+								<a href="#" class="nav_link"> css </a>
+								<a href="#" class="nav_link"> js </a>
+								<a href="#" class="nav_link"> text </a>
+						</div>
+					</div>
+				</nav>
+				<div>
+					<h1 class="hero_title"> hero_title{{title}} </h1>
+					<p class="hero_text">нупростодуж  едовгеслово{{text}} </p>
+				</div>
+			</header>
+			<hr>
+			{{!-- {{> divider}} --}}
+		</div>
+
+{{!-- ! ######################################################## MAIN --}}
+
+		<div class="page_block">
+			<main class="row plans">
+					{{!-- <div class="col plans_card"> --}}
+
+						{{!-- ------------- card-1--}}
+								{{> default-card}}
+						{{!-- ------------- card-2...--}}
+
+					{{!-- </div> --}}
+			</main>
+		</div>
+<hr>
+{{!-- ! ########################################################################################## FOOTER --}}
+		<div class="page_block">
+			{{!-- ||||||||||||||||||||||| додали в footer - border-top: 1px solid #dee2e6; а divider в css вимкнули--}}
+			{{!-- {{> divider}} --}}
+			<footer class="row footer g-0">
+				<div class="col-3">
+					{{!-- {{> logo}} --}}
+					<span class="footer_copyright"> Copyright 2023-2024 </span>
+				</div>
+
+				{{!-- {{#each footer}} --}}
+					<div class="col-3">
+						{{!-- <span class="footer_title"> {{title}} </span> --}}
+						{{!-- {{> nav list=links isVertical=true}} --}}
+					</div>
+				{{!-- {{/each}} --}}
+			</footer>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,231 @@
+:root {
+	--item: 30px;
+}
+
+/* =========================== flex*/
+.flex-container1 {
+	display: flex;
+}
+.flex-itema {
+	/* font-size: 20px; */
+	font-size: var(--item, 12px);
+	
+}
+
+.flex-container1a {
+	display: inline-flex;
+}
+.flex-itemb {
+	font-size: 12px;
+}
+
+/* =========================== flex-direction*/
+.flex-container2 {
+	display: flex;
+	flex-direction: row;
+}
+.flex-itemc {
+	font-size: 12px;
+
+}
+.flex-container2a {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.flex-itemd {
+	font-size: 12px;
+}
+.flex-container2b {
+	display: flex;
+	flex-direction: column;
+}
+.flex-itemda {
+	font-size: 12px;
+}
+.flex-container2c {
+	display: flex;
+	flex-direction: column-reverse;
+}
+.flex-itemdb {
+	font-size: 12px;
+}
+/* =========================== flex-wrap*/
+.flex-container3a {
+	display: flex;
+	/* flex-direction: row; */
+	flex-wrap:wrap;
+	/* width: 50%; */
+}
+.flex-itema3 {
+	font-size: 12px;
+}
+.flex-container3b {
+	display: flex;
+	/* flex-direction: row; */
+	flex-wrap:nowrap;
+	/* width: 50%; */
+}
+.flex-itemb3 {
+	font-size: 12px;
+}
+.flex-container3c {
+	display: flex;
+	/* flex-direction: row; */
+	flex-wrap:wrap-reverse;
+	/* width: 50%; */
+}
+.flex-itemc3 {
+	font-size: 12px;
+	width: 33%;
+	width: 300px;
+}
+
+/* =========================== flex-flow*/
+.flex-container4a {
+	display: flex;
+	/* flex-direction: row; */
+	flex-flow: column wrap-reverse;
+	/* width: 50%; */
+}
+.flex-itema4 {
+	font-size: 12px;
+	width: 33%;
+	width: 300px;
+}
+
+/* =========================== flex*/
+.flex-container4a {
+	display: flex;
+	/* flex-direction: row; */
+	flex-wrap:wrap-reverse;
+	/* width: 50%; */
+}
+.flex-itema4 {
+	font-size: 12px;
+	width: 33%;
+	width: 300px;
+}
+
+/* =========================== justify-content*/
+.flex-container5a {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+.flex-itema5 {
+	width: 300px;
+}
+.flex-container5b {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+}
+.flex-itemb5 {
+	width: 300px;
+}
+.flex-container5c {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.flex-itemc5 {
+	width: 300px;
+}
+.flex-container5d {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+}
+.flex-itemd5 {
+	width: 300px;
+	/* width: 250px; */
+}
+.flex-container5e {
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/* flex-wrap: wrap; */
+	justify-content: space-around;
+}
+.flex-iteme5 {
+	width: 300px;
+	/* width: 250px; */
+}
+.flex-container5f {
+	flex-direction: row;
+	/* flex-wrap: nowrap; */
+	flex-wrap: wrap;
+	justify-content: stretch;
+}
+.flex-itemf5 {
+	/* width: 300px; */
+	/* width: 250px; */
+}
+
+/* =========================== align-content*/
+.flex-container6a {
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: stretch;
+	/* height: 800px; */
+}
+.flex-itema6 {
+	/* width: 300px; */
+	/* width: 250px; */
+}
+
+/* =========================== flex*/
+
+/* =========================== flex*/
+
+/* =========================== flex*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

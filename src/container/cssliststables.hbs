@@ -1,0 +1,1194 @@
+	<h2 class="title"> Робота з списками
+та таблицям Working with lists
+and tables </h2>
+
+	{{!-- ================================ list-style--}}
+	<section>
+		<div class="card">
+			<div class="card-body">
+Маркер списку
+
+list-style — це CSS властивість, яка встановлює стилі
+для елементів списку, таких як < ul> і < ol>.
+
+.example {
+: square;
+}
+list-style
+
+list-style
+
+Маркер списку
+
+Значення Опис
+
+T P I T — тип маркера, P — розміщення маркеру,
+
+I — зображення-маркер
+
+T (type) list-style-type
+
+P (position) list-style-position
+
+I (image) list-style-image
+<div class="card">
+	<div class="card-body row">
+		
+						{{!-- todo----------------- NONE --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listnone">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- DISC --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listdisc">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- CIRCLE --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listcircle">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- SQUARE --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listsquare">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- DECIMAL --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listdecimal">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- DECIMAL-LEADING-ZERO --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listdecimal-leading-zero">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- LOWER-ROMAN --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listlower-roman">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- UPPER-ROMAN --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listupper-roman">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- LOWER-ALPHA --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listlower-alpha">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- UPPER-ALPHA --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listupper-alpha">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+
+						{{!-- todo----------------- --}}
+	</div>
+</div>
+
+
+			</div>
+		</div> 
+
+
+		{{!-- =====================================list-style-type --}}
+		<div class="card">
+			<div class="card-body">
+Тип маркера списку
+
+list-style-type — це CSS властивість, яка використовується
+для встановлення виду маркера списку
+
+.example {
+: square;
+}
+list-style-type
+
+list-style-type
+
+Тип маркера списку
+
+Значення Опис
+
+none Відключає відображення маркера
+
+disc Встановлює круглий маркер, який відображується
+як заповнене коло. Є значенням за замовчуванням
+
+circle Встановлює круглий маркер,
+
+який відображується як порожнє коло
+
+square Встановлює квадратний маркер,
+
+який відображується як заповнений квадрат
+
+decimal Встановлює нумерацію списку
+в десятковій системі числення
+
+decimal-leading-zero Встановлює нумерацію списку в десятковій системі
+числення, з додаванням нуля до чисел менше ніж 10
+
+Тип маркера списку
+
+Значення Опис
+
+lower-roman Встановлює нумерацію списку римськими цифрами
+
+в нижньому регістрі.
+
+upper-roman Встановлює нумерацію списку римськими цифрами
+
+в верхньому регістрі.
+
+lower-alpha Встановлює нумерацію списку в алфавітному
+
+порядку в нижньому регістрі.
+
+upper-alpha Встановлює нумерацію списку в алфавітному
+
+порядку в верхньому регістрі.
+<div class="card">
+	<div class="card-body row">
+		
+						{{!-- todo----------------- NONE --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listnone">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- DISC --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listdisc">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- CIRCLE --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listcircle">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- SQUARE --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listsquare">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- DECIMAL --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listdecimal">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+						</div>
+						
+						{{!-- todo----------------- DECIMAL-LEADING-ZERO --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listdecimal-leading-zero">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- LOWER-ROMAN --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listlower-roman">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- UPPER-ROMAN --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listupper-roman">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- LOWER-ALPHA --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listlower-alpha">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+						
+						{{!-- todo----------------- UPPER-ALPHA --}}
+					<div class="card col-2">
+						<div class="card-body">
+							<ul class="listupper-alpha">
+								<li> 1 item </li>
+								<li> 2 item </li>
+								<li> 3 item </li>
+								<li> 4 item </li>
+							</ul>
+						</div>
+					</div>
+
+						{{!-- todo----------------- --}}
+	</div>
+</div>
+
+
+			</div>
+		</div>
+
+
+		{{!-- ===================================== display --}}
+		<div class="card">
+			<div class="card-body">
+Відображення
+
+display — це CSS властивість, яка визначає відображення
+елемента на веб-сторінці
+
+.example {
+: inline;
+}
+display
+
+display
+
+Значення Опис
+
+list-item Елемент відображається як маркований або нумерований
+
+список
+
+
+<div class="card">
+	<div class="card-body">
+<ul class="card_block">
+				{{!-- {{#each features}} --}}
+					<li class="card_description_item"> this </li>
+					<li class="card_description_item"> this </li>
+					<li class="card_description_item"> this </li>
+					<li class="card_description_item"> this </li>
+				{{!-- {{/each}}  --}}
+			</ul>
+	</div>
+	</div>
+
+	
+<div class="card">
+	<div class="card-body">
+<ul class="card_blockd">
+				{{!-- {{#each features}} --}}
+					<li class="card_description_itemd"> this </li>
+					<li class="card_description_itemd"> this </li>
+					<li class="card_description_itemd"> this </li>
+					<li class="card_description_itemd"> this </li>
+				{{!-- {{/each}}  --}}
+			</ul>
+	</div>
+	</div>
+			</div>
+		</div>
+
+
+		{{!-- =====================================  list-style-position--}}
+
+		<div class="card">
+			<div class="card-body">
+Позиція маркера
+списку
+
+list-style-position — це CSS властивість, яка визначає де
+будуть розміщуватись маркери списку відносно тексту
+
+.example {
+: outside;
+}
+list-style-position
+
+list-style-position
+
+Позиція маркера
+списку
+
+Значення Опис
+
+inside Маркер розташовується всередині текстового блоку
+
+outside Маркер розташовується поза текстовим блоком
+<div class="card">
+	<div class="card-body">
+<ul class="card_block">
+				{{!-- {{#each features}} --}}
+					<li class="card_description_item"> this </li>
+					<li class="card_description_item"> this </li>
+					<li class="card_description_item"> this </li>
+					<li class="card_description_item"> this </li>
+				{{!-- {{/each}}  --}}
+			</ul>
+	</div>
+	</div>
+	<div class="card">
+	<div class="card-body">
+<ul class="card_blockk">
+				{{!-- {{#each features}} --}}
+					<li class="card_description_itemm"> this </li>
+					<li class="card_description_itemm"> this </li>
+					<li class="card_description_itemm"> this </li>
+					<li class="card_description_itemm"> this </li>
+				{{!-- {{/each}}  --}}
+			</ul>
+	</div>
+	</div>
+			</div>
+		</div>
+		{{!-- ===================================== list-style-image--}}
+
+		<div class="card">
+			<div class="card-body">
+Зображення для
+маркера списку
+
+list-style-image — це CSS властивість,
+яка встановлює зображення для маркера списку.
+
+.example {
+: none;
+}
+list-style-image
+
+list-style-image
+
+Зображення для
+маркера списку
+
+Значення Опис
+
+url(image.png) Вказує шлях до файлу зображення в форматі
+
+png, gif, jpg або іншому.
+
+none Встановлює відсутність зображення.
+
+linear-gradient() Встановлює лінійний градієнт, де кінці градієнта
+знаходяться на протилежних кінцях елемента.
+
+radial-gradient() Встановлює радіальний градієнт, де центр градієнта
+
+знаходиться в центрі елемента.
+
+conic-gradient()
+
+Створює градієнт, який змінює колір у вигляді
+конуса. Це означає, що колір змінюється залежно
+від кута, який вимірюється від центру градієнта.
+<div class="card">
+	<div class="card-body">
+<ul class="card_blocki">
+				{{!-- {{#each features}} --}}
+					<li class="card_description_itemi"> this </li>
+					<li class="card_description_itemi"> this </li>
+					<li class="card_description_itemi"> this </li>
+					<li class="card_description_itemi"> this </li>
+				{{!-- {{/each}}  --}}
+			</ul>
+	</div>
+	</div>
+			</div>
+		</div>
+		{{!-- ===================================== table-layout--}}
+
+		<div class="card">
+			<div class="card-body">
+Розміщення таблиці
+
+table-layout — це CSS властивість, яка визначає,
+як браузер повинен відображати таблицю
+і розподіляти простір між стовпцями та рядками
+
+.example {
+: fixed;
+}
+table-layout
+
+table-layout
+
+Розміщення таблиці
+
+Значення Опис
+
+auto Браузер обчислює ширину стовпців та розподіляє
+
+рядки відповідно до вмісту комірок таблиці.
+
+fixed
+
+Браузер використовує ширину стовпців, задану
+користувачем або визначену автоматично, і
+розподіляє простір між стовпцями рівномірно,
+незалежно від вмісту комірок таблиці.
+
+
+<div class="page_block">  
+	<div class="">  
+		<table class="tablela">
+			<tbody>
+				{{!-- {{#each footer}}
+					<tr>
+						{{#each links}}
+							<td> {{text}} </td>
+						{{/each}}
+					</tr>
+				{{/each}} --}}
+				<tr>
+					<td> linkxxxxxx1 </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					{{!-- <td> </td> --}}
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<div class="page_block"> 
+	<div class="">  
+		<table class="tablet">
+			<tbody>
+				<tr>
+					<td> link1 OOOOOO</td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					{{!-- <td> </td> --}}
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15OOOOOO </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+			</div>
+		</div>
+		{{!-- ===================================== border-collapse --}}
+
+		<div class="card">
+			<div class="card-body">
+Об’єднання рамки
+таблиці
+
+border-collapse — це CSS властивість, яка
+використовується для задання того, чи повинні
+об'єднуватися рамки таблиці в одну рамку, чи ні.
+
+.example {
+: collapse;
+}
+border-collapse
+
+border-collapse
+
+Об’єднання рамки
+таблиці
+
+Значення Опис
+
+separate Рамки таблиці не повинні об'єднуватися і повинні
+
+бути розташовані окремо одна від одної
+
+collapse Рамки таблиці повинні бути об'єднані в одну рамку.
+<div class="card">
+	<div class="card-body">
+<div class="page_block"> 
+	<div class="">  
+		<table class="tableta">
+			<tbody>
+				<tr>
+					<td> link1 </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					{{!-- <td> </td> --}}
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div> <br>
+<div class="page_block"> 
+	<div class="">  
+		<table class="tabletb">
+			<tbody>
+				<tr>
+					<td> link1 </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					{{!-- <td> </td> --}}
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+	</div>
+	</div>
+			</div>
+		</div>
+		{{!-- ===================================== border-spacing --}}
+
+		<div class="card">
+			<div class="card-body">
+Відстань між
+рамками
+
+border-spacing — це CSS властивість,
+яка встановлює відстань між рамками таблиці
+
+.example {
+: 12px;
+}
+border-spacing
+
+border-spacing
+
+Значення Опис
+
+Довжина Відстань між рамками таблиці
+<div class="card">
+	<div class="card-body">
+<div class="page_block"> 
+	<div class="">  
+		<table class="tabletc">
+			<tbody>
+				<tr>
+					<td> link1 </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					{{!-- <td> </td> --}}
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+	</div>
+	</div>
+			</div>
+		</div>
+		{{!-- ===================================== caption-side --}}
+
+		<div class="card">
+			<div class="card-body">
+Позиція заголовка
+
+caption-side — це CSS властивість, яка використовується
+для визначення положення заголовка таблиці
+
+.example {
+: top;
+}
+caption-side
+
+caption-side
+
+Позиція заголовка
+
+Значення Опис
+
+top Заголовок відображається зверху таблиці
+
+bottom Заголовок відображається знизу таблиці
+
+<div class="card">
+	<div class="card-body">
+<div class="page_block"> 
+	<div class="">  
+		<table class="tabletd">
+			<caption> my table </caption>
+			<tbody>
+				<tr>
+					<td> link1 </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					{{!-- <td> </td> --}}
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+	</div>
+	</div>
+
+			</div>
+		</div>
+		{{!-- ===================================== empty-cells --}}
+
+		<div class="card">
+			<div class="card-body">
+Відображення
+порожніх комірок
+
+empty-cells — це CSS властивість, яка визначає
+відображення границі комірок, в яких немає контенту.
+
+.example {
+: show;
+}
+empty-cells
+
+empty-cells
+
+Значення Опис
+
+show Границі будуть відображені навіть для порожніх комірок
+
+hide Границі будуть приховані для порожніх комірок
+
+
+<div class="card">
+	<div class="card-body">
+<div class="page_block"> 
+	<div class="">  
+		<table class="tablete">
+			{{!-- <caption> my table </caption> --}}
+			<tbody>
+				<tr>
+					<td> </td>
+					<td> link1 </td>
+					<td> </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					<td> </td>
+					<td> </td>
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+	</div>
+	</div>
+
+			</div>
+		</div>
+		{{!-- ===================================== opacity--}}
+
+		<div class="card">
+			<div class="card-body">
+Прозорість
+
+opacity — це CSS властивість, яка використовується
+для зміни прозорості елемента
+
+.example {
+: 50%;
+}
+opacity
+
+opacity
+
+Значення Опис
+
+число Числове значення від 0 до 1
+
+% Від 0% до 100%
+
+<div class="card">
+	<div class="card-body">
+		<p class="tabletfa">uygouflgupuygouy </p>
+<div class="page_block"> 
+	<div class="">  
+		<table class="tabletf">
+			{{!-- <caption> my table </caption> --}}
+			<tbody>
+				<tr>
+					<td> </td>
+					<td> link1 </td>
+					<td> </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					<td> </td>
+					<td> </td>
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> </td>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+	</div>
+	</div>
+
+			</div>
+		</div>
+		{{!-- ===================================== сontent--}}
+
+		<div class="card">
+			<div class="card-body">
+Вміст
+
+сontent — це CSS властивість, яка використовується
+для вставки вмісту псевдо елементів ::before та ::after
+
+.example {
+: normal;
+}
+сontent
+
+сontent
+
+Вміст
+
+Значення Опис
+
+normal Не додає жодного додаткового вмісту до елемента.
+
+Значення за замовчуванням
+
+none Відсутність вмісту
+
+<string> Вставляє текстовий рядок
+
+open-quote Встановлює лапки, що відкриваються,
+
+перед елементом
+
+close-quote Встановлює лапки, що закриваються,
+
+перед елементом
+
+no-open-quote Відключає лапки, що відкриваються, перед
+
+елементом
+
+no-close-quote Відключає лапки, що закриваються, перед
+
+елементом.
+
+url() Вставляє картинку за URL-адресою
+<div class="card">
+	<div class="card-body">
+		<p class="closequote"> xjysjsjy</p>
+		<div class="closequote"> xjysjsjy</div>
+	</div>
+	</div>
+
+
+
+
+			</div>
+		</div>
+		{{!-- ===================================== сalc() --}}
+
+		<div class="card">
+			<div class="card-body">
+Калькулювання
+
+сalc() — це CSS функція, яка дозволяє виконувати
+арифметичні операції в межах CSS властивості
+
+.example {
+font-size: 50% - 15px ;
+}
+
+calc( )
+
+сalc()
+
+Значення Опис
+
++ Додавання
+
+Віднімання
+
+* Множення
+
+/ Ділення
+<div class="card">
+	<div class="card-body">
+<div class="page_block"> 
+	<div class="calc">  
+		<table class="tabletd">
+			<caption> my table </caption>
+			<tbody>
+				<tr>
+					<td> link1 </td>
+					<td> link2 </td>
+					<td> link3 </td>
+					<td> link4 </td>
+				</tr>
+				<tr>
+					<td> url1 </td>
+					<td> url2 </td>
+					<td> url3 </td>
+					<td> url4 </td>
+				</tr>
+				<tr>
+					<td> url5 </td>
+					<td> url6 </td>
+					{{!-- <td> </td> --}}
+					<td> url7 </td>
+					<td> url8 </td>
+				</tr>
+				<tr>
+					<td> url9 </td>
+					<td> url10 </td>
+					<td> url11 </td>
+				</tr>
+				<tr>
+					<td> url12 </td>
+					<td> url13 </td>
+					<td> url14 </td>
+					<td> url15 </td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+	</div>
+	</div>
+			</div>
+		</div>
+		{{!-- ===================================== var() --}}
+
+		<div class="card">
+			<div class="card-body">
+Змінна
+
+var() — це CSS функція, яка використовується для
+визначення значення CSS змінних.
+
+:root {
+: #1e90ff;
+}
+--green
+
+--<name>: значення;
+
+.selector {
+color: , #000000 ;
+}
+
+var( ) --green
+
+var(--<name>, <default>)
+
+<name> — це назва змінної
+<default> — це значення за замовчуванням
+			</div>
+		</div>
+		{{!-- ===================================== --}}
+
+		<div class="card">
+			<div class="card-body">
+				<p class="one"> huoutftf</p>
+				<p class="two"> cddchuoutftf</p>
+				<p class="three"> qweerfeqwhuoutftf</p>
+			</div>
+		</div>
+		{{!-- ===================================== --}}
+		
+	</section>
