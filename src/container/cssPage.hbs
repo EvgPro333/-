@@ -12,10 +12,16 @@
 				<nav class="header_nav col-9">
 					<div class="header_nav_right">
 						<div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
-								<a href="#" class="nav_link"> html </a>
-								<a href="#" class="nav_link"> css </a>
-								<a href="#" class="nav_link"> js </a>
-								<a href="#" class="nav_link"> text </a>
+								{{!-- <a href="#" class="nav_link"> html </a> --}}
+								{{!-- <a href="#" class="nav_link"> css </a> --}}
+								{{!-- <a href="#" class="nav_link"> js </a> --}}
+								{{!-- <a href="#" class="nav_link"> text </a> --}}
+								{{!-- {{#with data}} --}}
+								{{#each nav}}
+									<a href="{{url}}" class="nav_link"> {{text}} </a>
+
+								{{/each}}
+								{{!-- {{/with}} --}}
 						</div>
 					</div>
 				</nav>
