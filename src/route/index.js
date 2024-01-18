@@ -3,7 +3,29 @@ const express = require('express')
 // Cтворюємо роутер - місце, куди ми підключаємо ендпоїнти
 const router = express.Router()
 
-// *================================================================ my var
+// !================================================================ my var
+// var css = {
+//   text: 'css',
+//   url: 'cssPage',
+// }
+var nav = [
+  {
+    text: 'git',
+    url: 'gitPage',
+  },
+  {
+    text: 'html',
+    url: 'htmlPage',
+  },
+  {
+    text: 'css',
+    url: 'cssPage',
+  },
+  {
+    text: 'handlebars',
+    url: 'handlebarsPage',
+  },
+]
 // var header = {
 //   name: {
 //     firstname: 'Dmytro',
@@ -32,6 +54,7 @@ const router = express.Router()
 // }
 
 // !################################################################ mainPage
+// ================================================================ mainPage
 // router.get Створює нам один ентпоїнт
 //           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/', function (req, res) {
@@ -42,8 +65,30 @@ router.get('/', function (req, res) {
     page: {
       title: 'cource - main page',
     },
+    nav,
+    //  nav: {
+    //    css,
+    //  },
     main: [
-      // HTML
+      // *                       VSCode
+      {
+        name: 'VSCode',
+        value: `VSCode
+			 			(VSCode)`,
+        //  url: '/html',
+        url: 'vscodePage',
+        path: '/img/mainPage/vscodemain.png',
+      },
+      // *                       GIT-NODE
+      {
+        name: 'GITHUB & NODE JS',
+        value: `GIT-NODE
+			 			(GIT-NODE)`,
+        //  url: '/html',
+        url: 'gitPage',
+        path: '/img/mainPage/githubmain.png',
+      },
+      // *                       HTML
       {
         name: 'HTML',
         value: `Hyper Text Markup Languager
@@ -52,7 +97,7 @@ router.get('/', function (req, res) {
         url: 'http://google.com',
         path: '/img/mainPage/htmlmain.png',
       },
-      // CSS
+      // *                       CSS
       {
         name: 'CSS',
         value: 'css',
@@ -60,7 +105,7 @@ router.get('/', function (req, res) {
         url: 'cssPage',
         path: '/img/mainPage/cssmain.png',
       },
-      // HandleBars
+      // *                       HandleBars
       {
         name: 'HandleBars',
         value: 'handlebars',
@@ -71,6 +116,22 @@ router.get('/', function (req, res) {
     ],
   })
 })
+
+// todo===========================================================================
+// !											GIT & NODE
+// todo===========================================================================
+
+// ================================================================ gitPage
+router.get('/gitPage', function (req, res) {
+  res.render('gitnode', {
+    layout: 'gitnodePage',
+    page: {
+      title: 'htmlPage',
+    },
+    nav,
+  })
+})
+
 // todo===========================================================================
 // !											HTML
 // todo===========================================================================
@@ -96,8 +157,9 @@ router.get('/cssPage', function (req, res) {
     page: {
       title: 'cssPage',
     },
+    nav,
     main: [
-      // Знайомство з СSS
+      // *                        Знайомство з СSS
       {
         name: 'Знайомство з СSS',
         //   value: `Hyper Text Markup Languager
@@ -106,7 +168,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/htmlmain.png',
       },
-      // Підключення CSS
+      // *                        Підключення CSS
       {
         name: 'Підключення CSS',
         //   value: 'css',
@@ -114,7 +176,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'cssPage',
         //   path: '/img/mainPage/cssmain.png',
       },
-      // Селектори. 1 частина
+      // *                        Селектори. 1 частина
       {
         name: 'Селектори. 1 частина',
         //   value: 'handlebars',
@@ -122,7 +184,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Селектори. 2 частина
+      // *                        Селектори. 2 частина
       {
         name: 'Селектори. 2 частина',
         //   value: 'handlebars',
@@ -130,7 +192,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Селектори. 3 частина
+      // *                        Селектори. 3 частина
       {
         name: 'Селектори. 3 частина',
         //   value: 'handlebars',
@@ -138,7 +200,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Селектори. 4 частина
+      // *                        Селектори. 4 частина
       {
         name: 'Селектори. 4 частина',
         //   value: 'handlebars',
@@ -146,7 +208,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Відображення тексту
+      // *                        Відображення тексту
       {
         name: 'Відображення тексту',
         //   value: 'handlebars',
@@ -154,7 +216,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Відображення шрифту
+      // *                        Відображення шрифту
       {
         name: 'Відображення шрифту',
         //   value: 'handlebars',
@@ -162,7 +224,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Відображення блоків
+      // *                        Відображення блоків
       {
         name: 'Відображення блоків',
         //   value: 'handlebars',
@@ -170,7 +232,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Робота з рамками та тінями
+      // *                        Робота з рамками та тінями
       {
         name: 'Робота з рамками та тінями',
         //   value: 'handlebars',
@@ -178,7 +240,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Робота з обрізанням та перенесенням контенту
+      // *                        Робота з обрізанням та перенесенням контенту
       {
         name: 'Робота з обрізанням та перенесенням контенту',
         //   value: 'handlebars',
@@ -186,7 +248,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Робота з фоном
+      // *                        Робота з фоном
       {
         name: 'Робота з фоном',
         //   value: 'handlebars',
@@ -194,7 +256,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Робота з списками та таблицями
+      // *                        Робота з списками та таблицями
       {
         name: 'Робота з списками та таблицями',
         //   value: 'handlebars',
@@ -202,7 +264,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Робота з гнучким позиціюванням
+      // *                        Робота з гнучким позиціюванням
       {
         name: 'Робота з гнучким позиціюванням',
         //   value: 'handlebars',
@@ -210,7 +272,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Словник сучасних та продвинутих CSS властивостей для робити з текстом, шрифтом та блоками
+      // *                        Словник сучасних та продвинутих CSS властивостей для робити з текстом, шрифтом та блоками
       {
         name: 'Словник сучасних та продвинутих CSS властивостей для робити з текстом, шрифтом та блоками',
         //   value: 'handlebars',
@@ -218,7 +280,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Словник сучасних та продвинутих CSS властивостей для робити з стовпцями, фрагментами та прокруткою
+      // *                        Словник сучасних та продвинутих CSS властивостей для робити з стовпцями, фрагментами та прокруткою
       {
         name: 'Словник сучасних та продвинутих CSS властивостей для робити з стовпцями, фрагментами та прокруткою',
         //   value: 'handlebars',
@@ -226,7 +288,7 @@ router.get('/cssPage', function (req, res) {
         //   url: 'http://google.com',
         //   path: '/img/mainPage/handlebarsmain.png',
       },
-      // Словник селекторів без підтримки
+      // *                        Словник селекторів без підтримки
       {
         name: 'Словник селекторів без підтримки',
         //   value: 'handlebars',
@@ -337,7 +399,7 @@ router.get('/css', function (req, res) {
       title: 'css',
     },
     lesson: {
-      title: 'Робота з обрызанням та перенесенням контенту',
+      title: 'Робота з ...',
     },
   })
 })
